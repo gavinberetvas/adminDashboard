@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --dashboardblue: rgb(94, 158, 214);
-    --searchbarGray:  rgb(225, 224, 222);
+    --dashboardblue: rgb(47, 158, 255);
+    --searchbarGray:  rgb(248, 248, 246);
+    --headerWhite: rgb(255, 255, 255);
 }
 
 .wrapper{
+    z-index: 1;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
@@ -22,7 +24,8 @@
     background-color: var(--dashboardblue);
     grid-row: 1/-1;
     grid-column: 1/2;
-    padding: 1rem
+    padding: 1.5rem;
+    padding-right: 3rem;
     /* position: absolute; */
     /* height: 100vh;
     width: 100px; */
@@ -50,21 +53,24 @@ img:nth-child(1){
     height: 4rem;
 }
 li:nth-child(2){
-    font-size: 2.3rem;
+    font-size: 3.3rem;
 }
 
 li {
     padding: 1rem 0;
     text-align: left;
     padding-left: 1rem;
+    font-size: 2rem;
 }
 
 .header {
-    background-color: rgb(253, 248, 245);
+    background-color: var(--headerWhite);
+    z-index: 1;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .searchrow {
-    padding: .4rem 2rem;
+    padding: 2.5rem 2rem 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,9 +88,15 @@ li {
 .search {
     background-color: var(--searchbarGray);
     border-radius: 24px;
+    border: 1px solid rgb(219, 219, 219);
     height: 2.4rem;
     padding: 1rem;
     font-size: 1.5rem;
+    width: 50rem;
+}
+
+.magnify {
+    padding-left: 1rem;
 }
 
 .username {
@@ -108,7 +120,8 @@ li {
 .console {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
+    
 }
 
 .user {
@@ -143,6 +156,7 @@ li {
     font-size: 1.6rem;
     letter-spacing: 2px;
     border-radius: 80px;
+    border: 1px solid white;
 
 }
 
@@ -158,7 +172,7 @@ li {
 
 
 .cards {
-    background-color: aqua;
+    background-color: var(--searchbarGray);
     /* grid-row: 2/ 3;
     grid-column: 1/2; */
     display: grid;
@@ -169,14 +183,22 @@ li {
     padding-bottom: 7rem;
     row-gap: 5rem;
     column-gap: 3rem;
+    
+
 }
 
 .card {
-    
     border-radius: 18px;
     background-color: aliceblue;
     padding: 3rem;
-    border-left: 10px gold solid;
+    border-left: 15px gold solid;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card:nth-of-type(1), .card:nth-of-type(2){
+    margin-top: -1.5rem;
 }
 
 .projects {
@@ -188,7 +210,8 @@ li {
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    color: rgb(93, 93, 93);
 }
 .right {
     margin-bottom: -3rem;
