@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --dashboardblue: rgb(94, 158, 214);
+    --searchbarGray:  rgb(225, 224, 222);
+}
+
+.wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+.sidebar{
+    background-color: var(--dashboardblue);
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    padding: 1rem
+    /* position: absolute; */
+    /* height: 100vh;
+    width: 100px; */
+}
+
+.sidebaricons {
+    padding-left: .3rem;
+    margin: auto;
+    height: 2.5rem;
+    filter:invert(100%)
+}
+
+.nav {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    list-style-type: none;
+    padding-left: 0;
+    color:azure;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+img:nth-child(1){
+    height: 4rem;
+}
+li:nth-child(2){
+    font-size: 2.3rem;
+}
+
+li {
+    padding: 1rem 0;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.header {
+    background-color: rgb(253, 248, 245);
+}
+
+.searchrow {
+    padding: .4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr;
+}
+
+.searchwrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 10fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    background-color: var(--searchbarGray);
+    border-radius: 24px;
+    height: 2.4rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.username {
+    font-size: 2rem;
+}
+
+.flexright {
+    gap: 1.5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.tao {
+    height: 4rem;
+}
+.flexright > .bell {
+    height: 2.6rem;
+}
+
+.console {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.user {
+    display: flex;
+    justify-content: left;
+}
+
+.bgroup {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user > .taoBig {
+    height: 6rem;
+    padding: 0rem 1rem;
+}
+
+.greeting {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.consolebutton {
+    width: 10rem;
+    height: 3.6rem;
+    background-color: var(--dashboardblue);
+    color:aliceblue;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    border-radius: 80px;
+
+}
+
+.main {
+    background-color: var(--searchbarGray);
+    
+}
