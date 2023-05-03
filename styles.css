@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid black; */
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%
 }
 
 :root {
   --dashboardblue: rgb(47, 158, 255);
   --searchbarGray: rgb(233, 233, 233);
   --headerWhite: rgb(255, 255, 255);
-  --textgray:rgb(91, 91, 91);
+  --textgray: rgb(91, 91, 91);
 }
 
 .wrapper {
@@ -27,9 +30,6 @@
   grid-column: 1/2;
   padding: 1.5rem;
   padding-right: 3rem;
-  /* position: absolute; */
-  /* height: 100vh;
-    width: 100px; */
 }
 
 .sidebaricons {
@@ -165,14 +165,10 @@ li {
   background-color: var(--searchbarGray);
   display: grid;
   grid-template-columns: 5fr 2fr;
-
-  /* padding-bottom: 5rem; */
 }
 
 .cards {
   background-color: var(--searchbarGray);
-  /* grid-row: 2/ 3;
-    grid-column: 1/2; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto repeat(3, 1fr);
@@ -188,9 +184,7 @@ li {
   background-color: aliceblue;
   padding: 3rem;
   border-left: 15px gold solid;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .card:nth-of-type(1),
@@ -233,14 +227,13 @@ h4 {
   gap: 1.3rem;
 }
 .cardicons {
-  margin-top: 4rem;
+  margin-top: 8rem;
   height: 3rem;
   filter: invert(70%);
 }
 
 h2 {
   padding-bottom: 0.5rem;
-  
 }
 
 h3 {
@@ -254,16 +247,16 @@ h3 {
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 .trending {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 2rem;
@@ -282,10 +275,10 @@ hr {
 .athandle {
   font-weight: bold;
   font-size: 1.6rem;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
 }
 
 .infohandle {
   font-size: 1.6rem;
-  color: var(--textgray)
+  color: var(--textgray);
 }
