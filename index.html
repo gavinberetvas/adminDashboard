@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="sidebar">
+      <div class="sidebar" id="sidebar">
         <ul class="nav">
           <img src="assets/view-dashboard.svg" class="sidebaricons windows" />
           <li>Dashboard</li>
@@ -44,13 +45,14 @@
       </div>
       <div class="header">
         <div class="searchrow">
+          <img src="assets/view-headline.svg" class="headline" id="sidebar" onClick="funnnction()">
           <div class="searchwrapper">
             <img src="assets/magnify.svg" class="magnify">
             <input type="text" class="search" />
           </div>
           <div class="flexright">
             <img src="assets/bell-ring-outline.svg" class="bell" />
-            <img src="assets/Tao.svg" class="tao" />
+            <img src="assets/Tao.svg" class="tao" onclick="test2()">
             <p class="username">Taoist Admin</p>
           </div>
         </div>
@@ -69,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="main">
+      <div class="main" id="main" onclick="test2()">
         <div class="cards">
           <h4 class="projects">Projects</h4>
 
